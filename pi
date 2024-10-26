@@ -13,6 +13,10 @@ elif [ $1 == "u" ];then
 cd ~/wp-Run_pipmsg 1.zInstall pip package
 cd ~/wp-Run_pip/pip
 python3 -m pip uninstall $2 -y
+elif [ $1 == "s" ];then
+cd ~/wp-Run_pip/pip
+python3 -m show $2
 else
 msg Type pi i [name]
+msg pi u [name]
 fi
